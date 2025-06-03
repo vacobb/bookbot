@@ -18,8 +18,8 @@ def main():
     num_words = get_num_words(book_text)    ## Calls word num function
     num_char = get_num_char(book_text)     ## Calls char num function
     sorted_counts = sorted_char_count(num_char)    ## Calls sorted dict
+   
     print(f"Found {num_words} total words")
-    ## print(f"{num_char}")
     for item in sorted_counts:
         print(f"{item['char']}: {item['num']}")
 
